@@ -12,9 +12,9 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="nav-menu">
+        <div class="nav-menu ml-2">
           <div class="logo">
-            <img src="assets/svg/logo.svg" alt="Logo" onload="SVGInject(this)">
+            <img src="assets/svg/logo.svg" class="w-auto" alt="Logo" onload="SVGInject(this)">
           </div>
           <ul class="nav-list">
             <li><a href="" class="nav-link">Inicio</a></li>
@@ -29,8 +29,38 @@
             <img src="./assets/svg/icon-youtube.svg" alt="Ícone Youtube" onload="SVGInject(this)" />
             <img src="./assets/svg/icon-twitter.svg" alt="Ícone Twitter" onload="SVGInject(this)" />
         </div>
+        <div class="hamburguer nav-or-hamburguer">
+          <input type="checkbox" id="bx">
+
+          <label for="bx">
+              <div class="bx mr-2"></div>
+          </label>
+
+          <div class="responsive retreat-top">
+              <ul class="mx-1 nav-hamburguer">
+                  <li>
+                      <a class="nav-link-hamburguer" href="./index.html" title="Página Inicial">Home</a>
+                  </li>
+                  <li>
+                      <a class="nav-link-hamburguer" href="./about.html" title="Sobre">Sobre</a>
+                  </li>
+                  <li>
+                      <a class="nav-link-hamburguer" href="./characters.html" title="Personagens">Personagens</a>
+                  </li>
+                  <li>
+                      <a class="nav-link-hamburguer be-your-self" href="./costumes.html" title="Trajes">#Trajes</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
       </nav>
     </header>
+
+    <section class="bg-video">
+      <video class="video" autoplay muted loop>
+        <source src="assets/video/spiderman-index.mp4" />
+      </video>
+    </section>
 
     <section class="container">
       <div class="container-item-1">
@@ -44,14 +74,14 @@
           ao universo dos videogames. Agora, Miles é a estrela do jogo, e se
           desenvolve como um herói muito interessante ao longo da história.
         </p>
-        <div>
+        <div class="">
           <a href="" class="btn">Comprar Agora</a>
-          <a href="" class="btn-secondary">Assistir Trailer</a>
+          <a href="" class="btn-secondary ml-2">Assistir Trailer</a>
         </div>
 
-        <div class="brands">
-            <img src="./assets/svg/ps.svg" alt="Ícone Playstation" onload="SVGInject(this)" />
-            <img src="./assets/svg/marvel.svg" alt="Ícone Marvel" onload="SVGInject(this)" />
+        <div class="flex align-items-center mt-1">
+            <img src="./assets/svg/ps.svg" class="w-auto" alt="Ícone Playstation" onload="SVGInject(this)" />
+            <img src="./assets/svg/marvel.svg" class="w-auto ml-2" alt="Ícone Marvel" onload="SVGInject(this)" />
         </div>
       </div>
       <div class="container-item-2">
