@@ -1,9 +1,12 @@
-// Style Menu
 header {
     width: 100%;
     padding: 16px 0;
-    z-index: 800;
+    height: 15vh;
     transition: background 0.7s ease;
+
+    @include responsive-menu() {
+        height: 5vh;
+    }
 }
 
 .navbar {
@@ -18,7 +21,6 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    z-index: 10000;
 }
 
 .nav-list {
@@ -81,7 +83,6 @@ header {
 
 .hamburguer {
     display: none;
-    z-index: 9999;
 
     @include responsive-menu() {
         display: block;
